@@ -8,7 +8,7 @@ setwd(d)
 
 data <- read.csv("soccer_game.csv")
 
-KK <- data %>% group_by(team) %>% tally() %>% ar
+KK <- data %>% group_by(team) %>% tally() %>% arrage
 
 
 write.csv(KK,"C:/Users/user/Desktop/testdata/myfirstfile2.csv")
