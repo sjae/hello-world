@@ -1,3 +1,7 @@
+#Study 용 금융데이터 수집
+#all rights reserved by http://henryquant.blogspot.com/ 
+#알아서 활용하자
+
 library(httr)
 library(rvest)
 library(stringr)
@@ -67,4 +71,5 @@ down_ind = POST(down_url, query = list(code = otp),
 # 데이터 저장
 write.csv(down_ind, 'data/krx_ind.csv')
 
-
+# this is end of line
+# 여기까지 확인 요망
