@@ -73,3 +73,6 @@ write.csv(down_ind, 'data/krx_ind.csv')
 
 # this is end of line
 # 여기까지 확인 요망
+
+#RStudio >> git >> Push버튼 >> 업로드 됨. 
+
