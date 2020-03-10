@@ -1,7 +1,7 @@
 #제무제표 다운로드
 #copy in 2020-03-06
 # curl을 인스톨 해야 하나..install.packages(c("curl", "httr"))
-
+#오늘도  안되네...
 
 library(httr)
 library(rvest)
