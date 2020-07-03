@@ -15,6 +15,8 @@ Sys.setlocale("LC_ALL", "English")
 url = paste0('http://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp?pGB=1&gicode=A005930')
 
 data = GET(url)
+content(data)
+
 data = data %>%
   read_html() %>%
   html_table()

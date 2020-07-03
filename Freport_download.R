@@ -1,24 +1,7 @@
 
 #report_down()함수를 통해 정기 공시를 엑셀로 다운로드함
 
-report_down <-
-  function(name, type = 1, force = F) {
-    search_result <- ticker_list[grepl(name, ticker_list$종목명, fixed = T), 1:2]
-    
-    #api.key <- '직접 스스로 받은 API키를 치세요'
-    api.key <- 'c64c3daa9ef85f81a7993bf1026dc9a262686261'
-    start.date <- '19990101'
-    ticker <- search_result[1, 1]
-    url <- paste0("http://dart.fss.or.kr/api/search.json?auth=",
-                  api.key,"&crp_cd=",ticker,"&start_dt=",start.date,
-                  "&bsn_tp=A00", type)
-    
-    # auth  발급받은 인증키(40자리)(필수)
-    # crp_cd    공시대상회사의 종목코드(상장사:숫자 6자리) 또는 고유번호(기타법인:숫자 8자리)
-    # start_dt  검색시작 접수일자(YYYYMMDD) : 없으면 end_dt
-    # bsn_tp    #A001: 정기 #A002: 반기 #A003: 분기
-    
-    #setwd("자신이 파일을 다운받을 경로를 치세요")
+
     mydir <- getwd()
     setwd(mydir)
     
